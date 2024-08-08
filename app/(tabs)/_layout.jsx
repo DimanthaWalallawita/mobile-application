@@ -34,13 +34,13 @@ const TabLayout = () => {
     <>
       <Tabs
         screenOptions={{
-          tabBarActiveTintColor: "#FFA001",
-          tabBarInactiveTintColor: "#000",
+          tabBarActiveTintColor: "#D06F2A",
+          tabBarInactiveTintColor: "#fff",
           tabBarShowLabel: false,
           tabBarStyle: {
-            backgroundColor: "#fff",
+            backgroundColor: "#000",
             borderTopWidth: 1,
-            borderTopColor: "#fff",
+            borderTopColor: "#D06F2A",
             height: 84,
           },
         }}
@@ -70,7 +70,7 @@ const TabLayout = () => {
               <TabIcon
                 icon={icons.search}
                 color={color}
-                name="Read"
+                name="View"
                 focused={focused}
               />
             ),
@@ -102,7 +102,7 @@ const TabLayout = () => {
               <TabIcon
                 icon={icons.bookmark}
                 color={color}
-                name="Saved"
+                name="Study"
                 focused={focused}
               />
             ),
