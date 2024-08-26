@@ -71,33 +71,33 @@ const Home = () => {
 
   //  we cannot do that with just scrollview as there's both horizontal and vertical scroll (two flat lists, within trending)
 
-  // return (
-  //   <View style={styles.container}>
-  //     <View style={styles.imageContainer}>
-  //       <TouchableOpacity onPress={() => handleImageClick(images.sleep)}>
-  //         <Image source={images.sleep} style={styles.image} />
-  //       </TouchableOpacity>
-  //       <TouchableOpacity onPress={() => handleImageClick(images.eat)}>
-  //         <Image source={images.eat} style={styles.image} />
-  //       </TouchableOpacity>
-  //       <TouchableOpacity onPress={() => handleImageClick(images.play)}>
-  //         <Image source={images.play} style={styles.image} />
-  //       </TouchableOpacity>
-  //     </View>
+  return (
+    <View style={styles.container}>
+      {/* <View style={styles.imageContainer}>
+        <TouchableOpacity onPress={() => handleImageClick(images.sleep)}>
+          <Image source={images.sleep} style={styles.image} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => handleImageClick(images.eat)}>
+          <Image source={images.eat} style={styles.image} />
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => handleImageClick(images.play)}>
+          <Image source={images.play} style={styles.image} />
+        </TouchableOpacity>
+      </View> */}
 
-  //     <View style={styles.videoContainer}>
-  //       <Video
-  //         ref={video}
-  //         style={{ width: "1500%", height: height }}
-  //         source={videoSource}
-  //         useNativeControls={false}
-  //         resizeMode="contain"
-  //         isLooping={true}
-  //         onPlaybackStatusUpdate={handlePlaybackStatusUpdate}
-  //       ></Video>
-  //     </View>
-  //   </View>
-  // );
+      <View style={styles.videoContainer}>
+        <Video
+          ref={video}
+          style={{ width: "1500%", height: height }}
+          source={videoSource}
+          useNativeControls={false}
+          resizeMode="contain"
+          isLooping={true}
+          onPlaybackStatusUpdate={handlePlaybackStatusUpdate}
+        ></Video>
+      </View>
+    </View>
+  );
 };
 
 export default Home;
@@ -114,6 +114,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     alignSelf: "stretch",
+    bottom: 20,
   },
 
   imageContainer: {
