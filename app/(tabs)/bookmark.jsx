@@ -14,7 +14,6 @@ import {
 } from "react-native";
 import { images } from "../../constants";
 import { camera } from "../../components";
-import { useNavigation } from "@react-navigation/native"; 
 
 const screen = Dimensions.get("window");
 
