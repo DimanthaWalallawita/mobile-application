@@ -118,7 +118,7 @@ const TabLayout = () => {
               <TabIcon
                 icon={icons.profile}
                 color={color}
-                name="Profile"
+                name="Camera"
                 focused={focused}
               />
             ),

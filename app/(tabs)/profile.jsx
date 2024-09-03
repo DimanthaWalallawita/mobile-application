@@ -53,7 +53,7 @@ const Profile = () => {
   }
 
   return (
-    <SafeAreaView className="px-4 mb-6 bg-primary h-full">
+    <SafeAreaView className="px-4 mb-6 bg-black h-full">
       <Text className="text-2xl text-white font-psemibold my-6">Camera</Text>
       {!image ? (
         <Camera

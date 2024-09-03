@@ -1,5 +1,6 @@
 import { Picker } from "@react-native-picker/picker";
 import { Video } from "expo-av";
+import { Redirect, router } from "expo-router";
 import React, {
   Component
 } from "react";
@@ -13,7 +14,7 @@ import {
   View
 } from "react-native";
 import { images } from "../../constants";
-import { camera } from "../../components";
+import { camera, CustomButton } from "../../components";
 
 const screen = Dimensions.get("window");
 
@@ -312,9 +313,11 @@ export default class App extends Component {
           </TouchableOpacity>
         )}
         {!this.state.isRunning && (
-          <TouchableOpacity onPress={checkMood} style={styles.checkMoodButton}>
-          <Text style={styles.checkMoodButtonText}>Check Mood</Text>
-        </TouchableOpacity>
+          <CustomButton
+          title="Continue with Email"
+          handlePress={() => router.push("/profile")}
+          containerStyles="w-full mt-7"
+        />
         )}
         {this.state.videoPlaying && (
           <View style={styles.videoContainer}>
