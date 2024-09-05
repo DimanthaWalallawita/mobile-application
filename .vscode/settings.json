@@ -17,5 +17,6 @@
   },
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
-  }
+  },
+  "workbench.settings.useSplitJSON": false
 }

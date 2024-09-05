@@ -110,15 +110,31 @@ const TabLayout = () => {
         />
 
         <Tabs.Screen
-          name="profile"
+          name="camera"
           options={{
-            title: "Profile",
+            title: "Camera",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
                 icon={icons.profile}
                 color={color}
                 name="Camera"
+                focused={focused}
+              />
+            ),
+          }}
+        />
+
+        <Tabs.Screen
+          name="profile"
+          options={{
+            title: "Profile",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.rightArrow}
+                color={color}
+                name="Profile"
                 focused={focused}
               />
             ),

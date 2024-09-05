@@ -315,7 +315,7 @@ export default class App extends Component {
         {!this.state.isRunning && (
           <CustomButton
           title="Check Mood"
-          handlePress={() => router.push("/profile")}
+          handlePress={() => router.push("/camera")}
           containerStyles="w-full mt-7"
         />
         )}
